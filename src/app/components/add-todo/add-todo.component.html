@@ -1,0 +1,16 @@
+<div class="">
+
+<h2 class="text-center mt-4 mb-4" >
+    Todo List Created by Dev Owais In Angular 
+</h2>
+
+    <form (ngSubmit) ="onSubmit()" >
+        <label for="exampleInputEmail1" class="form-label ">Todo Title</label>
+        <input type="text" [(ngModel)] = "title" class="form-control mb-2" id="TodoTitle" name="todo-title"  aria-describedby="">
+        <div class="mb-2">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="text" class="form-control mb-2" id="descr" name="descr" [(ngModel)] = "descr">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Add Todo</button>
+    </form>
+    </div>
